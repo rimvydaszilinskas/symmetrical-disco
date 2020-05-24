@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+input {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    color: purple;
+}
+
+input.submit-btn {
+    background-color: purple;
+    border: 0;
+    padding: 5px;
+    margin: 10px 0px 10px;
+    font-weight: bold;
+}
+
+button.clear {
+    background-color: gray;
+    border: 0;
+    color: white;
+    font-weight: bold;
+}

@@ -1,0 +1,86 @@
+[
+    {
+        "sign": "Aquarius",
+        "from": 20,
+        "from_leap": 20,
+        "to": 49,
+        "to_leap": 49
+    },
+    {
+        "sign": "Pisces",
+        "from": 50,
+        "from_leap": 50,
+        "to": 79,
+        "to_leap": 80
+    },
+    {
+        "sign": "Aries",
+        "from": 80,
+        "from_leap": 81,
+        "to": 109,
+        "to_leap": 110
+    },
+    {
+        "sign": "Taurus",
+        "from": 110,
+        "from_leap": 111,
+        "to": 140,
+        "to_leap": 141
+    },
+    {
+        "sign": "Gemini",
+        "from": 141,
+        "from_leap": 142,
+        "to": 171,
+        "to_leap": 172
+    },
+    {
+        "sign": "Cancer",
+        "from": 172,
+        "from_leap": 173,
+        "to": 203,
+        "to_leap": 204
+    },
+    {
+        "sign": "Leo",
+        "from": 204,
+        "from_leap": 205,
+        "to": 234,
+        "to_leap": 235
+    },
+    {
+        "sign": "Virgo",
+        "from": 235,
+        "from_leap": 236,
+        "to": 265,
+        "to_leap": 266
+    },
+    {
+        "sign": "Libra",
+        "from": 266,
+        "from_leap": 267,
+        "to": 295,
+        "to_leap": 296
+    },
+    {
+        "sign": "Scorpio",
+        "from": 296,
+        "from_leap": 297,
+        "to": 325,
+        "to_leap": 326
+    },
+    {
+        "sign": "Sagitarius",
+        "from": 326,
+        "from_leap": 327,
+        "to": 355,
+        "to_leap": 356
+    },
+    {
+        "sign": "Capricorn",
+        "from": 356,
+        "from_leap": 357,
+        "to": 19,
+        "to_leap": 19
+    }
+]

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KEA</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>Horror-scope for every occasion</h1>
+
+        <form id="form">
+            <label for="name">Name: </label>
+            <input type="text" id="name">
+            <br/>
+
+            <label for="date">Date of birth: </label>
+            <input type="date" id="date" onchange="handleDateChange(event)">
+            
+            <div class="questions" id="questions">
+                <p>Question 1:</p>
+
+                <input type="radio" id="a1" name="q1" value="0">
+                <label for="a1">A1</label>
+                <br/>
+
+                <input type="radio" id="a2" name="q1" value="1">
+                <label for="a2">A2</label>
+                <br/>
+
+                <input type="radio" id="a3" name="q1" value="2">
+                <label for="a3">A3</label>
+                <br/>
+
+                <p>Question 2:</p>
+                
+                <input type="radio" id="q2a1" name="q2" value="0">
+                <label for="q2a1">A1</label>
+                <br/>
+
+                <input type="radio" id="q2a2" name="q2" value="1">
+                <label for="q2a2">A2</label>
+                <br/>
+
+                <input type="radio" id="q2a3" name="q2" value="2">
+                <label for="q2a3">A3</label>
+                <br/>
+
+                <p>Question 3:</p>
+                
+                <input type="radio" id="q3a1" name="q3" value="0">
+                <label for="q3a1">A1</label>
+                <br/>
+
+                <input type="radio" id="q3a2" name="q3" value="1">
+                <label for="q3a2">A2</label>
+                <br/>
+
+                <input type="radio" id="q3a3" name="q3" value="2">
+                <label for="q3a3">A3</label>
+            </div>
+            
+            <br/>
+            <input class="submit-btn" type="submit" value="Show me my future">
+            <br/>
+            <button class="clear">Clear</button>            
+        </form>
+
+        <script src="script.js"></script>
+    </body>
+</html>
