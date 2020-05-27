@@ -69,8 +69,8 @@ document.getElementById("form").addEventListener("submit", (event) => {
           throw "";
         }
       });
-      horoscope;
     } catch (e) {
+      console.log(e);
       return;
     }
   }
