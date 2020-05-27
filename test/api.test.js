@@ -20,7 +20,7 @@ describe("API", () => {
         .request(app)
         .get("/ping")
         .end((err, res) => {
-          expect(res).to.have.status(200);
+          expect(res).to.have.status(400);
           done();
         });
     });
