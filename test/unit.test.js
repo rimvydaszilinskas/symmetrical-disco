@@ -33,3 +33,27 @@ describe("Test day of year", () => {
     expect(utils.getDayOfYear(value.date)).to.be.equal(value.day);
   });
 });
+
+describe('Test different inputs for name field', function() {
+    describe('Valid Input', function() {
+        let inputs = [["T", "One Capital Letter"], ["t", "One lowercase letter"], ["TEST", "All letters capitalized"], ["test", "All Letters Lowercase"], ["Test Test", "Space in between characters"]];
+        inputs.forEach(data => {
+           it("Should return user input", function() {
+
+           });
+        });
+    });
+    describe('Invalid Input', function() {
+        let inputs = [["t-e-s-t", "symbols inside text"], ["-test-", "Symbols wrapping roman alpabet characters"], ["testtesttesttesttesttesttesttesttesttesttesttest", "Too many characters"], ["", "Blank"]
+        ["アントニア", "Japanese Characters"],["吟味", "Chinese Characters"],["%^$£@", "Only symbols"],["1-2-2003", "Date Format"]];
+        inputs.forEach(data => {
+           it("Shouldn't return an error", function() {
+
+           });
+    });
+});
+
+
+
+
+
