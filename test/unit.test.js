@@ -33,3 +33,26 @@ describe("Test day of year", () => {
     expect(utils.getDayOfYear(value.date)).to.be.equal(value.day);
   });
 });
+
+describe("Test leap is leap year", () => {
+  given(
+    {
+      year: new Date("2000-01-01"),
+      result: true,
+    },
+    {
+      year: new Date("2001-01-01"),
+      result: false,
+    },
+    {
+      year: new Date("1900-01-01"),
+      result: false,
+    },
+    {
+      year: new Date("1999-01-01"),
+      result: false,
+    }
+  ).it("should check if leap", (value) => {
+    expect(utils.isLeapYear(value.year)).to.be.equal(value.result);
+  });
+});
