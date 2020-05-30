@@ -39,21 +39,21 @@ function getDayOfYear(date) {
 
 function getSign(date) {
   let isLeap = isLeapYear(date);
-  let fromKey = "from" + (isLeap ? "" : "_leap");
-  let toKey = "to" + (isLeap ? "" : "_leap");
+  let fromKey = "from" + (!isLeap ? "" : "_leap");
+  let toKey = "to" + (!isLeap ? "" : "_leap");
   let dayOfYear = getDayOfYear(date);
 
   let sign = signs.find(
     (sign) => dayOfYear >= sign[fromKey] && dayOfYear <= sign[toKey]
   );
 
-  if (sign !== null || sign !== undefined) {
-    return sign.sign;
+  if (sign === null || sign === undefined) {
+    sign = "Capricorn";
+  } else {
+    sign = sign.sign;
   }
 
-  sign = sign.find((sign) => sign.sign === "Capricorn");
-
-  return sign.sign;
+  return sign;
 }
 
 module.exports = {
