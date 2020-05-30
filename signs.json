@@ -1,5 +1,12 @@
 [
     {
+        "sign": "Capricorn",
+        "from": 356,
+        "from_leap": 357,
+        "to": 19,
+        "to_leap": 19
+    },
+    {
         "sign": "Aquarius",
         "from": 20,
         "from_leap": 20,
@@ -75,12 +82,5 @@
         "from_leap": 327,
         "to": 355,
         "to_leap": 356
-    },
-    {
-        "sign": "Capricorn",
-        "from": 356,
-        "from_leap": 357,
-        "to": 19,
-        "to_leap": 19
     }
 ]
