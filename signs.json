@@ -3,13 +3,13 @@
         "sign": "Capricorn",
         "from": 356,
         "from_leap": 357,
-        "to": 19,
-        "to_leap": 19
+        "to": 20,
+        "to_leap": 20
     },
     {
         "sign": "Aquarius",
-        "from": 20,
-        "from_leap": 20,
+        "from": 21,
+        "from_leap": 21,
         "to": 49,
         "to_leap": 49
     },
@@ -24,27 +24,27 @@
         "sign": "Aries",
         "from": 80,
         "from_leap": 81,
-        "to": 109,
-        "to_leap": 110
+        "to": 110,
+        "to_leap": 111
     },
     {
         "sign": "Taurus",
-        "from": 110,
-        "from_leap": 111,
-        "to": 140,
-        "to_leap": 141
+        "from": 111,
+        "from_leap": 112,
+        "to": 141,
+        "to_leap": 142
     },
     {
         "sign": "Gemini",
-        "from": 141,
-        "from_leap": 142,
-        "to": 171,
-        "to_leap": 172
+        "from": 142,
+        "from_leap": 143,
+        "to": 172,
+        "to_leap": 173
     },
     {
         "sign": "Cancer",
-        "from": 172,
-        "from_leap": 173,
+        "from": 173,
+        "from_leap": 174,
         "to": 203,
         "to_leap": 204
     },
@@ -52,13 +52,13 @@
         "sign": "Leo",
         "from": 204,
         "from_leap": 205,
-        "to": 234,
-        "to_leap": 235
+        "to": 235,
+        "to_leap": 236
     },
     {
         "sign": "Virgo",
-        "from": 235,
-        "from_leap": 236,
+        "from": 236,
+        "from_leap": 237,
         "to": 265,
         "to_leap": 266
     },
@@ -66,20 +66,20 @@
         "sign": "Libra",
         "from": 266,
         "from_leap": 267,
-        "to": 295,
-        "to_leap": 296
+        "to": 296,
+        "to_leap": 297
     },
     {
         "sign": "Scorpio",
-        "from": 296,
-        "from_leap": 297,
-        "to": 325,
-        "to_leap": 326
+        "from": 297,
+        "from_leap": 298,
+        "to": 326,
+        "to_leap": 327
     },
     {
         "sign": "Sagitarius",
-        "from": 326,
-        "from_leap": 327,
+        "from": 327,
+        "from_leap": 328,
         "to": 355,
         "to_leap": 356
     }
