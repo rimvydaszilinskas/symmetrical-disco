@@ -1,9 +1,12 @@
 const given = require("mocha-testdata");
 const chai = require("chai");
 
+const horrorscopes = require("../horrorscopes.json");
+
 const utils = require("../utils");
 
 const { expect, assert } = chai;
+
 
 describe("Test day of year", () => {
   it("Should return an integer", () => {
@@ -34,6 +37,7 @@ describe("Test day of year", () => {
   });
 });
 
+
 describe("Test leap is leap year", () => {
   given(
     {
@@ -56,3 +60,57 @@ describe("Test leap is leap year", () => {
     expect(utils.isLeapYear(value.year)).to.be.equal(value.result);
   });
 });
+
+
+describe("Test type of horroscope", () => {
+    given(
+        {
+            date: new Date("2021-02-27"),
+            result: horrorscopes.bad[1],
+            value: 1,
+        },
+        {
+            date: new Date("2021-02-28"),
+            result: horrorscopes.bad[2],
+            value: 2
+        },
+        {
+            date: new Date("2021-03-01"),
+            result: horrorscopes.bad[3],
+            value: 3
+        },
+        {
+            date: new Date("2020-02-28"),
+            result: horrorscopes.good[0],
+            value: undefined
+        },
+        {
+            date: new Date("2020-02-29"),
+            result: horrorscopes.good[1],
+            value: undefined
+        },
+        {
+            date: new Date("2020-03-01"),
+            result: horrorscopes.good[0],
+            value: 0
+        },
+        {
+            date: new Date("2019-02-27"),
+            result: horrorscopes.bad[4],
+            value: 4
+        },
+        {
+            date: new Date("2019-02-28"),
+            result: horrorscopes.bad[5],
+            value: 5
+        },
+        {
+            date: new Date("2019-03-01"),
+            result: horrorscopes.bad[6],
+            value: 6
+        },
+    ).it("should return a horrorscope", (value) => {
+        expect(utils.getHoroscope(value.value, value.date)).to.be.equal(value.result);
+    })
+});
+
