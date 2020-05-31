@@ -121,7 +121,7 @@ describe("Test Signs", () => {
     result: "Capricorn"
   },
   {
-    date: new Date("2020-02-19"),
+    date: new Date("2020-02-18"),
     result: "Aquarius"
   },
   {
