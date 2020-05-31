@@ -25,6 +25,12 @@ function handleDateChange(event) {
     });
 }
 
+$("#name").keypress((event) => {
+  var ew = event.which;
+
+  return ew == 32 || (ew >= 65 && ew <= 90) || (ew >= 97 && ew <= 122);
+});
+
 document.getElementById("form").addEventListener("submit", (event) => {
   event.preventDefault();
   let data = {
