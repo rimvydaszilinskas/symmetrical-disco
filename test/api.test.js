@@ -26,7 +26,35 @@ describe("API", () => {
     });
   });
 
-  describe("Test posting", () => {
+  describe("POST /date/leap", () => {
+    givenAsync(
+      {
+        date: "1997-01-01",
+        res: false,
+      },
+      {
+        date: "2000-01-01",
+        res: true,
+      },
+      {
+        date: "1900-01-01",
+        res: false,
+      }
+    ).it("should return is leap", (done, value) => {
+      chai
+        .request(app)
+        .post("/date/leap")
+        .send({ date: value.date })
+        .end((err, res) => {
+          expect(err).to.be.null;
+          expect(res.body.isLeap).to.be.equal(value.res);
+          expect(res).to.have.status(200);
+          done();
+        });
+    });
+  });
+
+  describe("POST /submit", () => {
     givenAsync(
       {
         date: "1997-03-21",
