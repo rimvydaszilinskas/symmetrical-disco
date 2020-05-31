@@ -114,3 +114,57 @@ describe("Test type of horroscope", () => {
     })
 });
 
+describe("Test Signs", () => {
+  given(
+  {
+    date: new Date("2020-01-19"),
+    result: "Capricorn"
+  },
+  {
+    date: new Date("2020-02-19"),
+    result: "Aquarius"
+  },
+  {
+    date: new Date("2020-03-19"),
+    result: "Pisces"
+  }, 
+  {
+    date: new Date("2020-04-18"),
+    result: "Aries"
+  },
+  {
+    date: new Date("2020-05-19"),
+    result: "Taurus"
+  },
+  {
+    date: new Date("2020-06-19"),
+    result: "Gemini"
+  },
+  {
+    date: new Date("2020-07-19"),
+    result: "Cancer"
+  },
+  {
+    date: new Date("2020-08-19"),
+    result: "Leo"
+  },
+  {
+    date: new Date("2020-09-19"),
+    result: "Virgo"
+  },
+  {
+    date: new Date("2020-10-19"),
+    result: "Libra"
+  },
+  {
+    date: new Date("2020-11-19"),
+    result: "Scorpio"
+  },
+  {
+    date: new Date("2020-12-19"),
+    result: "Sagitarius"
+  }
+).it("Should return the correct sign", (value) => {
+  expect(utils.getSign(value.date)).to.be.equal(value.result);   
+});
+});
