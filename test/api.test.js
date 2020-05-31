@@ -24,7 +24,9 @@ describe("API", () => {
           done();
         });
     });
+  });
 
+  describe("Test posting", () => {
     givenAsync(
       {
         date: "1997-03-21",
