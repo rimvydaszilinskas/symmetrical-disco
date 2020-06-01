@@ -6,6 +6,8 @@ const { givenAsync } = require("mocha-testdata");
 const { app, close } = require("../index");
 const { expect } = chai;
 
+const predictions = require("../horrorscopes.json");
+
 chai.use(chaiHttp);
 
 describe("API", () => {
@@ -1212,7 +1214,11 @@ describe("API", () => {
         })
         .end((err, res) => {
           expect(res.body.sign).to.be.equal(value.zodiac);
-          expect(res.body.data).to.contain(value.good ? "day" : "Shit");
+          let prediction = value.good
+            ? predictions.good[value.date.endsWith("02-29") ? 1 : 0]
+            : predictions.bad[value.sum];
+
+          expect(res.body.data).to.be.equal(prediction);
           expect(res).to.have.status(200);
           done();
         });
