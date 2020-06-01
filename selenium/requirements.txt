@@ -1,0 +1,7 @@
+autopep8==1.5.3
+ddt==1.4.1
+pycodestyle==2.6.0
+selenium==3.141.0
+toml==0.10.1
+unittest-data-provider==1.0.1
+urllib3==1.25.9
